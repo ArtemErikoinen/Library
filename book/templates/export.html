@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экспорт</title>
+
+</head>
+<body>
+<br />
+{% extends 'base.html' %}</p>
+<p>{% block content %}</p>
+<h3>Export Data</h3>
+<p>exporting from database</p>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}</p>
+<p>Please select format of file.</p>
+<p>    <select name="file-format" class="form-control my-3"><option selected>Choose format...</option><option>CSV</option><option>JSON</option><option>XLS (Excel)</option></select><br />
+    <button class="btn btn-primary" type="submit">Export</button><br />
+  </form>
+<p>  <a href="{% url 'home' %}">Return Home View</a><br />
+  {% endblock %}<br />
+</body>
+</html>

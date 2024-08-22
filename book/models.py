@@ -46,8 +46,8 @@ class Book(models.Model):
 
     def save(self, *args, **kwargs):
         img = qrcode.make(f'http://192.168.31.186:8000/admin/book/book/{self.id}/change/')
-        font1 = ImageFont.truetype('C:/Users/Артем/Downloads/Nunito.ttf', size=24)
-        font2 = ImageFont.truetype('C:/Users/Артем/Downloads/Nunito.ttf', size=16)
+        font1 = ImageFont.truetype('C:/Users/Артем/Library/ttf/Nunito.ttf', size=24)
+        font2 = ImageFont.truetype('C:/Users/Артем/Library/ttf/Nunito.ttf', size=16)
         canvas = Image.new('RGBA',[1000,400],(255, 0, 0, 0),)
         canvas.paste(img)  # Error occurs on this line
         draw = ImageDraw.Draw(canvas)
@@ -118,7 +118,7 @@ class HistoryBook(models.Model):
     extradition = models.BooleanField(verbose_name='Выдача',default=True)
     def save(self, *args, **kwargs):
         if self.extradition==True:
-            self.data_of_return='Now'
+            self.data_of_return='-'
         else:
             self.data_of_return = datetime.date.today()
 

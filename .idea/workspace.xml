@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de088031-545c-4ce2-b7b5-41ac659657a7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/book/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/migrations/0012_alter_historybook_data_of_capture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book/templates/export.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/qr_code/qr-code-Александр_Дюма_Собрание_Сочинений_IhChVJa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/qr_code/qr-code-Вильям_Шекспир_Собрание_избранных_произведений_8fK1W3D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/qr_code/qr-code-Сергей_Есенин_Собрание_сочиненийв_двух_томах_Том_1_D45XvPD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader/migrations/0002_reader_full_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader/migrations/0003_schoolclass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader/migrations/0004_alter_schoolclass_options_alter_reader_school_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ttf/Nunito.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject_Biblioteka/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject_Biblioteka/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +32,14 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -32,22 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.djangoProject_Biblioteka.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Артем/djangoProject_Biblioteka",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.ChangelistConflict",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.djangoProject_Biblioteka.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Артем/djangoProject_Biblioteka&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="djangoProject_Biblioteka" type="Python.DjangoServer" factoryName="Django server">
       <module name="djangoProject_Biblioteka" />
@@ -59,13 +85,14 @@
         <env name="DJANGO_SETTINGS_MODULE" value="djangoProject_Biblioteka.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (djangoProject_Biblioteka)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="localhost" />
+      <option name="host" value="192.168.31.186" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -104,10 +131,31 @@
       <workItem from="1723742590155" duration="7286000" />
       <workItem from="1723881656086" duration="4949000" />
       <workItem from="1723899499609" duration="6988000" />
+      <workItem from="1724008183489" duration="72000" />
+      <workItem from="1724008303053" duration="650000" />
+      <workItem from="1724010204995" duration="73000" />
+      <workItem from="1724096627147" duration="1050000" />
+      <workItem from="1724097723888" duration="3731000" />
+      <workItem from="1724140370463" duration="5148000" />
+      <workItem from="1724156495407" duration="153000" />
+      <workItem from="1724156720354" duration="3383000" />
+      <workItem from="1724171479578" duration="1000" />
+      <workItem from="1724357567700" duration="309000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
