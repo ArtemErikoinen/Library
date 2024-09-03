@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-7x3lh_4c$h*33r$v^5us0qrmhqx*#k&(p1@7u&+b7tl!&^tvt(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.31.186']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'home_menu',
     'import_export',
     'reports',
+    'sendemail'
 
 ]
 
@@ -133,4 +134,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 IMPORT_EXPORT_USE_TRANSACTIONS = True
 EXPORT_FORMATS = [XLSX]
 IMPORT_EXPORT_ESCAPE_FORMULAE_ON_EXPORT = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    from .prod_settings import *
 

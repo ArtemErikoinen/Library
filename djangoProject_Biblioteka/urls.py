@@ -21,7 +21,7 @@ from django.conf import settings
 from home_menu.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('djadmin/', admin.site.urls),
     path('', home),
 ]
 if settings.DEBUG:
