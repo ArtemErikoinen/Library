@@ -45,10 +45,10 @@ class Book(models.Model):
 
 
     def save(self, *args, **kwargs):
-        img = qrcode.make(f'http://192.168.31.186:8000/admin/book/book/{self.id}/change/')
+        img = qrcode.make(f'http://192.168.31.186:8000/djadmin/book/book/{self.id}/change/')
         font1 = ImageFont.truetype('C:/Users/Артем/Library/ttf/Nunito.ttf', size=24)
         font2 = ImageFont.truetype('C:/Users/Артем/Library/ttf/Nunito.ttf', size=16)
-        canvas = Image.new('RGBA',[1000,400],(255, 0, 0, 0),)
+        '''canvas = Image.new('RGBA',[1000,400],(255, 0, 0, 0),)
         canvas.paste(img)  # Error occurs on this line
         draw = ImageDraw.Draw(canvas)
         draw.text(
@@ -84,11 +84,11 @@ class Book(models.Model):
             font=font1,
             fill=('#1C0606'),
         )
-
+'''
 
         buffer = BytesIO()
-        canvas.save(buffer, 'PNG')
-        canvas.close()
+        img.save(buffer, 'PNG')
+        img.close()
         fname = f'qr-code-{self.name}.png'
         self.menu_qr_code.save(fname, File(buffer),save=False)
 
